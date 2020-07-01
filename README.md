@@ -33,17 +33,17 @@ Classify mapped read2 sequence into different catergories including split mapped
 
 ###### perl filter_germline_second_end_BWA.pl mm9_germline.region r2.$sample.trimmed.fq.filter20bait.sam
 ###### Output:         
-        #  r2.$sample.germline_filtered_SplitRead
-        #  r2.$sample.germline_filtered_noSplitRead
-        #  r2.$sample.germline
-        #  r2.$sample.germline_filtered_pure
-        #  r2.$sample.germline_filtered_long_unmap_part  
+        #  *.germline_filtered_SplitRead
+        #  *.germline_filtered_noSplitRead
+        #  *.germline
+        #  *.germline_filtered_pure
+        #  *.germline_filtered_long_unmap_part  
         
 Filter out reads mapped to multiple repetitive genomic regions:
 
 ###### perl filter_repeatMasker_BWA.pl repeatMasker_mm9.txt mm9_germline.region r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead
 ###### Output:
-        #  r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut
+        #  *.repeatOut
 
 Dissect Split mapped read2 with part of sequence mapped between IgkJ4 RSS and bait primer coordinate were defined as split mapping joins with IgkJ4 bait.
 
@@ -56,3 +56,5 @@ Dissect Split mapped read2 with part of sequence mapped between IgkJ4 RSS and ba
         #  *.keepDuplicate_onlyIgKj4       
  
 Split mapping joins with IgkJ4 bait were further classified according to prey genomic location:
+
+
