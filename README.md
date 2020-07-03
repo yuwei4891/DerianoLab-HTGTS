@@ -54,6 +54,17 @@ Dissect Split mapped read2 with part of sequence mapped between IgkJ4 RSS and ba
         #  *.keepDuplicate_noIgKj4_all     
         #  *.keepDuplicate_multipleMapped  
         #  *.keepDuplicate_onlyIgKj4       
+
+Visualize the mapped split reads in IGV :
+
+###### cat sam.header r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4 >r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.sam
+###### samtools view -bS r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.sam >r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam
+###### bedtools bamtobed -i r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam >r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed
+######  samtools sort -f r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.sorted.bam
+###### bam2wig r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.sorted.bam >r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.sorted.bam.wig 
+ 
+###### Output:
+        #  *.bam.wig
  
 Split mapping joins with IgkJ4 bait were further classified according to prey genomic location:
 
