@@ -72,10 +72,17 @@ Split mapping joins with IgkJ4 bait were further classified according to prey ge
 Step 8. Visualize the V(D)J recombination within IgK locus by Circos:
 
 ###### perl convert_bed_to_Circos_plot_input_file_IgK_only.pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed <reads_number_cutoff>
+
 ###### Output:
         #  *.links
-        #  .hismap
+        #  *.hismap
 ###### perl configure_Circos_conf.pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed circos_IgK.conf links.conf image.conf hisplots.conf
+
+###### Output:
+        #  .circos.conf
+        #  .links.conf
+        #  .image.conf
+        #  .hisplots.conf
 ###### circos -conf r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed.circos.conf
 
 ###### Output:
