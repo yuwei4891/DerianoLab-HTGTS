@@ -1,5 +1,5 @@
 # DerianoLab-LAM-HTGTS pipeline
-Codes for LAM-HTGTS analysis
+
 
 These codes are the pipeline for LAM-HTGTS sequencing analysis. 
 
