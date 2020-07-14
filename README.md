@@ -79,10 +79,10 @@ Step 8. Visualize the V(D)J recombination within IgK locus by Circos:
 ###### perl configure_Circos_conf.pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed circos_IgK.conf links.conf image.conf hisplots.conf
 
 ###### Output:
-        #  .circos.conf
-        #  .links.conf
-        #  .image.conf
-        #  .hisplots.conf
+        #  *.circos.conf
+        #  *.links.conf
+        #  *.image.conf
+        #  *.hisplots.conf
 ###### circos -conf r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed.circos.conf
 
 ###### Output:
