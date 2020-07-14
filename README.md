@@ -88,3 +88,17 @@ Step 8. Visualize the V(D)J recombination within IgK locus by Circos:
 ###### Output:
         #  *.circos.png
 
+
+Step 9. Bar graphs plotting the extent of resected DNA for each end joining product relative to the RSS of IgK V segments
+
+###### perl dissect_V_segment_resection_length.pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate Igk.segments.coordinate.mm9.bed
+###### Output:
+	#			*.V_segment_resection_micro_length			### resection length and microhomology length
+	#			*.V_segment_CE_resection_length				# resection length at coding end
+	#			*.V_segment_SE_resection_length				# resection length at signal end
+	#			*.microhomology						# read with microhomology
+	#			*.insert						# read with insertion
+	#			*.microhomology.length					# length of microhomology for each read with microhomology
+	#			*.microhomology.length.percentage			# percentage of each microhomology length
+	#			*.insert.length						# length of insertion
+	#			*.micro_insert_resect_summary				# summary of number of reads with microhomology and insertion and resection in V 
