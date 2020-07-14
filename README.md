@@ -1,9 +1,9 @@
 # DerianoLab-LAM-HTGTS
 Codes for LAM-HTGTS analysis
 
-These coded are the pipeline for LAM-HTGTS sequencing analysis. 
+These codes are the pipeline for LAM-HTGTS sequencing analysis. 
 
-The common tools were used including: PERL; BWA; samtools; ea-utils; circos; bedtools; R
+The common tools were used including: Perl; BWA; samtools; ea-utils; circos; bedtools; R
 
 The procedures for processing sequencing reads from MiSeq sequencing fastq reads:
 
