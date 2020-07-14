@@ -105,3 +105,5 @@ Step 9. Bar graphs plotting the extent of resected DNA for each end joining prod
 ###### perl produce_V_segment_resection_length_accumulate_plot_no_coding_sigal.pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate.V_segment_resection_micro_length
 ###### Output:
         #  *.resection_length_plot_combined_signal_coding
+
+Run R script "BarPlot_V_segment_resction_length.R" 
