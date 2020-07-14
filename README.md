@@ -5,7 +5,7 @@ These coded are the pipeline for LAM-HTGTS sequencing analysis.
 
 The common tools were used including: PERL; BWA; samtools; ea-utils; circos; bedtools; R
 
-The procedures for processing sequencing reads from Mi-Seq sequencing fastq reads:
+The procedures for processing sequencing reads from MiSeq sequencing fastq reads:
 
 
 
