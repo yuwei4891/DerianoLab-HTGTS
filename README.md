@@ -102,3 +102,6 @@ Step 9. Bar graphs plotting the extent of resected DNA for each end joining prod
 	#  *.microhomology.length.percentage			# percentage of each microhomology length
 	#  *.insert.length					# length of insertion
 	#  *.micro_insert_resect_summary			# summary of number of reads with microhomology and insertion and resection in V 
+###### perl produce_V_segment_resection_length_accumulate_plot_no_coding_sigal.pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate.V_segment_resection_micro_length
+###### Output:
+        #  *.resection_length_plot_combined_signal_coding
