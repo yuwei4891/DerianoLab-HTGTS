@@ -106,4 +106,4 @@ Step 9. Bar graphs plotting the extent of resected DNA for each end joining prod
 ###### Output:
         #  *.resection_length_plot_combined_signal_coding
 
-Run R script "BarPlot_V_segment_resction_length.R" 
+###### Run R script "BarPlot_V_segment_resction_length.R" 
