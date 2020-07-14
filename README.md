@@ -28,7 +28,7 @@ Step 3. Mapping fastq sequence by BWA:
 
 
 ###### bwa mem -t $CPUS_PER_TASK reference_mm9_index r2.$sample.trimmed.fq.filter20bait >r2.$sample.trimmed.fq.filter20bait.sam
-        #  Please prepare your reference genome BWA index in advance
+        #  Please prepare your reference genome BWA index in advance, here we used mm9 reference
 
 Step 4. Classify mapped read2 sequence into different catergories including split mapped and germline:
 
