@@ -67,6 +67,9 @@ Step 7. Visualize the mapped split reads in IGV :
         #  *.bam.wig
  
 Split mapping joins with IgkJ4 bait were further classified according to prey genomic location:
+######  perl classify_VDJ_element_BWA.pl Ensembl.mm9.VDJ.bed r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate_noIgKj4.bam.bed
+###### Output:
+	#  The number of reads located in AgR loci: IgH; IgK; IgL; Tcrad; Tcrb; Tcrg et al;
 
 
 Step 8. Visualize the V(D)J recombination within IgK locus by Circos:
