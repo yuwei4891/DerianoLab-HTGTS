@@ -1,10 +1,10 @@
 if(@ARGV<1){
 	print "This scipt is to configure the Circos.conf file
-		Usage: perl *pl r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed circos.conf links.conf image.conf hisplots.conf
-		Output: r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed.circos.conf
-			r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed.links.conf
-			r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed.image.conf
-			r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed.hisplots.conf\n";
+		Usage: perl *pl r2.*_noIgKj4.bam.bed circos.conf links.conf image.conf hisplots.conf
+		Output: *.circos.conf
+			*.links.conf
+			*.image.conf
+			*.hisplots.conf\n";
 }
 
 open(IN_circos,"$ARGV[1]")||die("Can not open circos conf file\n");

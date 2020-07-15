@@ -1,5 +1,5 @@
 if(@ARGV<1){
-	print "		This script is to filter out SAM mapping result that locate in repeat regions and the window size of repeat is 100bp
+	print "		This script is to filter out SAM mapping result that locate in multiple repeat regions and the window size of repeat is 100bp
 			Usage: 
 				perl *pl repeatMasker.txt mm9_germline.region *.sam.germline_filtered_SplitRead
 			Output:

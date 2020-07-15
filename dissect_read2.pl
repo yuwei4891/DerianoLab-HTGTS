@@ -2,16 +2,13 @@ if(@ARGV<1){
 	print "This script is to find multiple cigar
 		Usage: perl *pl r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut STep mm9_germline.region \n
 	#	Output
-	#		*.keepDuplicate			# split mapped with one part JK4 another part is unknown
-	#		*.keepDuplicate_noIgKj4		# the part of reads without JK4 mapping sequence
-	#		*.keepDuplicate_noIgKj4_all	# both part of split reads without JK4
-	#		*.keepDuplicate_multipleMapped	# part of reads are multiple pieces and are mapped
-	#		*.keepDuplicate_onlyIgKj4	# the part of reads with JK4 mapping sequence\n";
+	#		*.keepDuplicate			
+	#		*.keepDuplicate_noIgKj4		
+	#		*.keepDuplicate_noIgKj4_all	
+	#		*.keepDuplicate_multipleMapped	
+	#		*.keepDuplicate_onlyIgKj4	\n";
 }
 
-#M01626:162:000000000-AD53D:1:1103:13125:25048_2:N:0:1	16	chr6	70024021	250	125S32M	*	0	0	GCTCATTTAGCCAAAATGTCACAAATTCACACAAGTTACCCAAACAGAACCAAAACGTCACAAGTAAATGAGCAAAAGTCTACTTACGTTTTATTTCCA
-#ACTTTGTCCCCGAGCCGAACGTGAATGGAGAGCTATAATCCTGCTGACAGAAATAAAC	HHGHHHHHHFGFHHGHHHHHHHHHHHHHHHHHHHHHHGGGHHHHHHHHHGHGHGGGHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHGHHHHHHHHHHHHGHHHGGGGGGGGGGGGHHHHHHHHHHHHHHHHHHHHHHGHHHHHHHHHHHHHHHGGGG	AS:
-#i:32	NM:i:0	MD:Z:32	YF:H:2D	YI:i:1	YP:i:2	YS:i:0
 
 $map_quality_cutoff=10;
 

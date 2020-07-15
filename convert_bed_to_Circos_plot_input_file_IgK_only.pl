@@ -1,8 +1,8 @@
 if(@ARGV<1){
 	print "This script is to produce the input file for Circos plot
-		Usage: perl *pl r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed   LinkCutoff
-		Output: r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed.links
-			r2.myc_combined_cRAG2_XLF.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.noDuplicate_noIgKj4.bam.bed.hismap\n";
+		Usage: perl *pl r2.$sample.*.bam.bed   LinkCutoff
+		Output: *.links
+			*.hismap\n";
 }
 
 open(IN,"$ARGV[0]")||die("Can not open in file\n");
@@ -35,9 +35,6 @@ $window=1000; # 1000 bp as bin count for read number
 my $int_IgK_start=int($IgK_start/$window);
 my $int_IgK_end=int($IgK_end/$window);
 
-#chr6	70672825	70672899	M01626:243:000000000-AP8H9:1:1101:11582:13513	60	+
-#chr15	61818694	61818785	M01626:243:000000000-AP8H9:1:2109:21042:4542	60	-
-#chr6	70673580	70673750	M01626:243:000000000-AP8H9:1:1108:26563:16411	60	-
 
 while($line=<IN>){
 	chomp $line;

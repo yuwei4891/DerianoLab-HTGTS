@@ -92,31 +92,9 @@ if($ARGV[0]=~/mm9/){
 			$cigar=$split[5];
 			$length=length($split[9]); #print "$chr\t$pos\n";
 			$mappingQuality=$split[4];
-#			if(($hash{$head}>1)&&($hash_mark{$head} ne "WrongMapping")&&($mappingQuality>$map_quality_cutoff)){  # mapping quality >20
 			if(($hash{$head}>1)&&($hash_mark{$head} ne "WrongMapping")){	
 				$mark{$head}="double"; # this read is split mapping read
-		#		$num_S=$cigar=~s/S/S/g;
-		#		$num_M=$cigar=~s/M/M/g;
-		#		if($num_S>1){  # eg. M01626:178:000000000-ADJVC:1:1102:7081:6135_2:N:0:1     16      chr14   83543638        5       63S26M145S
-		#			$cigar=~s/M/S/g;
-		#			$cigar=~s/S/\t/g;
-		#			if(($cigar[1]>$cigar[0]*3)||($cigar[1]>$cigar[2]*3)){ # M01626:162:000000000-AD53D:1:2106:12797:11363	0	chr6	70673545	60	63S138M5S
-		#			print "$hash_Yaha_line{$head}\n$cigar[0]\t$cigar[1]\t$cigar[2]\n";				
-		#				@temp=split /\n/,$hash{$head};
-		#				@split_temp_1=split /\t/,$temp[0];
-		#				@split_temp_2=split /\t/,$temp[1];
-		#				if((($split_temp_1[2] eq "chr6")&&($split_temp_1[3]<$hash_mm9_end)&&($split_temp_1[3]>$hash_mm9_start))||(($split_temp_2[2] eq "chr6")&&($split_temp_2[3]<$hash_mm9_end)&&($split_temp_2[3]>$hash_mm9_start))){ # make sure one end is IgKj4
-		#					print "$line\n";
-		#					print OUT1 "$line\n";
-		#				}
-		#			}
-		#			else{
-		#				$hash_mark{$head}="WrongMapping"; # mark the read which is wrong mapped eg. M01626:178:000000000-ADJVC:1:1102:7081:6135_2:N:0:1     16      chr14   83543638        5       63S26M145S
-		#			}
-		#		}
-		#		else{
-					print OUT1 "$line\n";
-		#		}
+				print OUT1 "$line\n";
 			}
 			else{
 				if($chr eq "chr6"){

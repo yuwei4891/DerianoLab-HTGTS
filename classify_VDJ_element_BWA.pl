@@ -1,6 +1,6 @@
 if(@ARGV<1){
-	print "This script is to classify read2 recombination site into Tcr, Igh , IgK, IgL
-		Usage: perl *pl Ensembl.bed r2.cRAG2_XLF_P53.trimmed.fq.filter20bait.mm9.yahaSAM.germline_filtered.repeatOut.duplicate.cigar.step5.filterOut_partOFread2_notIn_IgkJ4.bam.bed 
+	print "This script is to classify read2 recombination site into Tcr, Igh , IgK, IgL et al
+		Usage: perl *pl Ensembl.bed r2.$sample.*.notIn_IgkJ4.bam.bed 
 		Output: 
 			*class\n";
 }
@@ -12,16 +12,13 @@ open(OUT,">$out")||die("Can not open out file\n");
 
 $window=100;
 
-#15	61812842	61825168	MYC_broad
+
 #12	114480000	117260000	Igh
 #14	53040000	54860000	Tcrad
 #6	40820000	41540000	Tcrb
 #6	67500000	70700000	IgK
 #16	19060000	19280000	Igl
 #13	19260000	19460000	Tcrg
-#9	0	125909810	chr9
-#15	0	106173344	chr15
-#16	0	104125655	chr16
 
 while($line=<IN1>){
 	chomp $line;

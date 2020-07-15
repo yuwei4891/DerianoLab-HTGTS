@@ -5,18 +5,18 @@ if(@ARGV<1){
 		& add microhomology length for each with or without resection 
 
 	Usage: perl *pl
-					r2.JK_combined_p53.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead.repeatOut.keepDuplicate
-					MGI_Igk.txt.Ensembl_Igk.txt.start.end.coordinate.mm9.RSS
+					r2.*.keepDuplicate
+					Igk.segments.coordinate.mm9.bed
 	Output:
 					*.V_segment_resection_micro_length			### resection length and microhomology length
-					*.V_segment_CE_resection_length				# resection length at coding end
-					*.V_segment_SE_resection_length				# resection length at signal end
-					*.microhomology								# read with microhomology
-					*.insert									# read with insertion
-					*.microhomology.length						# length of microhomology for each read with microhomology
-					*.microhomology.length.percentage			# percentage of each microhomology length
-					*.insertion.length								# length of insertion
-					*.micro_insert_resect_summary				# summary of number of reads with microhomology and insertion and resection in V
+					*.V_segment_CE_resection_length				
+					*.V_segment_SE_resection_length				
+					*.microhomology								
+					*.insert									
+					*.microhomology.length						
+					*.microhomology.length.percentage			
+					*.insertion.length							
+					*.micro_insert_resect_summary				
 		\n";
 }
 					
@@ -395,7 +395,6 @@ while(($key,$value)=each % hash_line){
 	}
 }
 	
-#print "$total\n$total_read\n";
 open(IN_V_segment,"$ARGV[1]")||die("Can not open V segment file\n");
 #chr6	67892068	67892354	-	V	Igkv9-124	MGI:3646892	67892067
 #chr6	67797403	67797868	+	V	Igkv9-128	MGI:3809196	67797869

@@ -1,12 +1,12 @@
 if(@ARGV<1){
 	print "
-		This script is to filter raw read that read 1 can locate within 10 bp beyond designed bait primer
+		This script is to filter raw read 
 		Usage: 
 			perl *pl bait_10bp_IgKj4.fa read1.fq read2.fq
 		Output:
 			r1.fq.filter20bait
 			r2.fq.filter20bait
-			r2.notMatched_20bait";
+			r2.notMatched_20bait\n";
 }
 
 open(IN_bait,"$ARGV[0]")||die("Can not open bait sequence\n");
