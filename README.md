@@ -42,6 +42,7 @@ Step 4. Classify mapped read2 sequence into different catergories including spli
         
 Step 5. Filter out reads mapped to multiple repetitive genomic regions:
 
+Download annotated reference genome repeatMasker file (here "repeatMasker_mm9.txt") from NCBI Table Brower (eg.http://genome.ucsc.edu/cgi-bin/hgTables?hgsid=859742251_vFa32gnKLh87nv5B1zLGiv17mGee&clade=mammal&org=Mouse&db=mm9&hgta_group=varRep&hgta_track=rmsk&hgta_table=0&hgta_regionType=genome&position=chr12%3A57%2C795%2C963-57%2C815%2C592&hgta_outputType=primaryTable&hgta_outFileName=refSeq_gene_mm9.txt)
 ###### perl filter_repeatMasker_BWA.pl repeatMasker_mm9.txt mm9_germline.region r2.$sample.trimmed.fq.filter20bait.sam.germline_filtered_SplitRead
 ###### Output:
         #  *.repeatOut
