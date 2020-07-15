@@ -1,6 +1,6 @@
 if(@ARGV<1){
 	print "This script is to filter out second end of sequence which is germline
-		Usage: perl *pl mm9_germine.region r2.BWA.sam r2.Yaha.sam \n
+		Usage: perl *pl mm9_germine.region r2.BWA.sam \n
 	Output:  	 r2*.germline_filtered_SplitRead
 		 	 r2*.germline_filtered_noSplitRead			#	>75%mapped
 		 	 r2*.germline
